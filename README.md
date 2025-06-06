@@ -1,4 +1,4 @@
-# 🖼️ MyEra Sticker Canvas 🎨
+#  MyEra Sticker Canvas 
 
 A playful web app built with **React** and **react-konva** that lets you place, drag, and delete stickers on a canvas — all in your browser! No backend needed.
 
@@ -35,6 +35,19 @@ A playful web app built with **React** and **react-konva** that lets you place, 
 ```bash
 git clone https://github.com/harimouli/myera-assignment.git
 cd myera-assignment
+
+
+``css
+
+src/
+├── components/
+│   └── StickerCanvas.jsx
+├── hooks/
+│   └── useStickerImages.js
+├── App.jsx
+├── main.jsx
+└── index.css
+
 
 
 
