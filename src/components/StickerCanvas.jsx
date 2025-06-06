@@ -3,17 +3,14 @@ import { Stage, Layer, Image as KonvaImage } from "react-konva";
 
 import { useImages } from "../hooks/useImages";
 
-const snapToGrid = (pos, gridSize = 40) =>
-  Math.round(pos / gridSize) * gridSize;
+import { stickersData } from "../utils/stickers";
 
-const stickersData = [
-  { id: "smile", src: "https://img.icons8.com/color/48/smiling.png" },
-  { id: "angry", src: "https://img.icons8.com/ios-filled/50/angry.png" },
-  {
-    id: "star",
-    src: "https://img.icons8.com/external-sketchy-juicy-fish/60/external-emoji-emoji-sketchy-sketchy-juicy-fish-13.png",
-  },
-];
+const snapToGrid = (pos, gridSize = 40) => {
+    Math.round(pos / gridSize) * gridSize;
+}
+  
+
+
 
 export  function StickerCanvas() {
   const [stickers, setStickers] = useState([]);
@@ -51,13 +48,13 @@ export  function StickerCanvas() {
   };
 
   return (
-    <div className="flex items-center justify gap-6 p-6 bg-gray-700 rounded shadow-lg">
+    <div className="flex items-center justify gap-6 p-6 bg-gray-700 rounded shadow-lg h-screen">
       <div className="flex flex-col gap-3 items-center">
         {stickersData.map(({ id, src }) => (
           <button
             key={id}
             onClick={() => addSticker({ id, src })}
-            className="bg-white p-2 rounded hover:scale-110 transition"
+            className="bg-white p-2 rounded hover:scale-110 transition cursor-pointer"
             title={`Add ${id}`}
           >
             <img src={src} alt={id} className="w-8 h-8" />
@@ -65,7 +62,7 @@ export  function StickerCanvas() {
         ))}
         <button
           onClick={downloadCanvas}
-          className="mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700  cursor-pointer"
+          className="mt-6 px-4 py-2 bg-blue-600 text-white hover:bg-blue-700  cursor-pointer rounded-lg"
         >
           Download PNG
         </button>
