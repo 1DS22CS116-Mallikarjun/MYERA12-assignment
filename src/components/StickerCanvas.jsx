@@ -1,5 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef} from "react";
 import { Stage, Layer, Image as KonvaImage } from "react-konva";
+
+import { useImages } from "../hooks/useImages";
 
 const snapToGrid = (pos, gridSize = 40) =>
   Math.round(pos / gridSize) * gridSize;
@@ -12,22 +14,6 @@ const stickersData = [
     src: "https://img.icons8.com/external-sketchy-juicy-fish/60/external-emoji-emoji-sketchy-sketchy-juicy-fish-13.png",
   },
 ];
-
-
-const useImages = (stickerData) => {
-  const [loaded, setLoaded] = useState({});
-  useEffect(() => {
-    stickerData.forEach(({ src }) => {
-      const img = new Image();
-      img.crossOrigin = "anonymous";
-      img.src = src;
-      img.onload = () => {
-        setLoaded((prev) => ({ ...prev, [src]: img }));
-      };
-    });
-  }, [stickerData]);
-  return loaded;
-};
 
 export  function StickerCanvas() {
   const [stickers, setStickers] = useState([]);
