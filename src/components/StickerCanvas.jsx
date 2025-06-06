@@ -65,7 +65,7 @@ export  function StickerCanvas() {
   };
 
   return (
-    <div className="flex items-center justify-between gap-6 p-6 bg-gray-700 rounded shadow-lg">
+    <div className="flex items-center justify gap-6 p-6 bg-gray-700 rounded shadow-lg">
       <div className="flex flex-col gap-3 items-center">
         {stickersData.map(({ id, src }) => (
           <button
