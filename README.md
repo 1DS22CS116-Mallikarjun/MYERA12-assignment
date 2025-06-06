@@ -1,12 +1,40 @@
-# React + Vite
+# 🖼️ MyEra Sticker Canvas 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A playful web app built with **React** and **react-konva** that lets you place, drag, and delete stickers on a canvas — all in your browser! No backend needed.
 
-Currently, two official plugins are available:
+> 🚀 [Live Demo](https://myera-assignment.vercel.app)  
+> 📦 [GitHub Repo](https://github.com/harimouli/myera-assignment)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🖼️ 600 × 400 pixel canvas
+- 😊 Add fun emoji-style stickers
+- ✋ Drag stickers freely
+- 🎯 Snap to 40px grid
+- ❌ Double-click to delete a sticker
+- 💾 Download canvas as PNG image
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ **React** – UI Framework  
+- 🖌️ **react-konva** – Canvas rendering in React  
+- 🎨 **Tailwind CSS** – Utility-first styling  
+- ⚡ **Vite** – Fast dev server  
+- 📦 **Vercel** – For deployment  
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repo
+
+```bash
+git clone https://github.com/harimouli/myera-assignment.git
+cd myera-assignment
+
+
+
