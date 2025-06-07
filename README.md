@@ -2,7 +2,7 @@
 
 A playful web app built with **React** and **react-konva** that lets you place, drag, and delete stickers on a canvas — all in your browser! No backend needed.
 
-> 🚀 [Live Demo](https://myera-assignment.vercel.app)  
+> 🚀 [Live Demo](https://myera12.vercel.app/)  
 > 📦 [GitHub Repo](https://github.com/1DS22CS116-Mallikarjun/MYERA12-assignment.git)
 
 ---
